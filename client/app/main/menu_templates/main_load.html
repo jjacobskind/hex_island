@@ -1,6 +1,0 @@
-<p ng-if="previousGameIDs">Your current game ids are as follows...</p>
-<ul id="game_list">
-  <li ng-repeat="gameID in main_ctrl.previousGameIDs | orderBy: 'gameID' : 'reverse'">
-  	<a href ng-click="main_ctrl.loadPreviousGame(gameID)">{{gameID}}</a>
-  </li>
-</ul>
